@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -33,6 +33,61 @@
                 <h2 id="viewTitle"></h2>
                 <div id="viewCount">Views: 0</div>
                 <div id="viewContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html> 
+ -->
+
+ <!-- second html -->
+
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Left side: Blog List -->
+        <div class="blog-list">
+            <h2>Blog Posts</h2>
+            <div id="blogsList"></div>
+        </div>
+
+        <!-- Right side: Blog Management -->
+        <div class="blog-management">
+            <h2 id="managementTitle">Blog Details</h2>
+
+            <!-- Blog View Mode -->
+            <div class="view-mode">
+                <h3 id="viewTitle"></h3>
+                <p id="viewContent"></p>
+                <div id="viewCount">Views: 0</div>
+            </div>
+
+            <!-- Form and Buttons -->
+            <div class="form-group">
+                <label id="blogT" for="blogTitle">Title:</label>
+                <input type="text" id="blogTitle" placeholder="Enter blog title...">
+                <label id="blogC" for="blogContent">Content:</label>
+                <textarea id="blogContent" placeholder="Write your blog..."></textarea>
+            </div>
+
+            <!-- Button Actions -->
+            <div class="button-group">
+                <button onclick="createNewBlog()" class="btn primary-btn">New Blog</button>
+                <button onclick="editBlog()" class="btn secondary-btn">Edit</button>
+                <button onclick="saveBlog()" class="btn primary-btn">Save</button>
+                <button onclick="deleteBlog()" class="btn delete-btn">Delete</button>
             </div>
         </div>
     </div>
