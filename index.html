@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Blog Management System</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="blog-list">
+            <h2>Blog Posts</h2>
+            <div id="blogsList"></div>
+        </div>
+        <div class="blog-management">
+            <h2 id="managementTitle">Create New Blog</h2>
+            <div class="button-group">
+                <button onclick="createNewBlog()" class="button primary-button">New</button>
+                <button onclick="editBlog()" class="button secondary-button" id="editButton">Edit</button>
+                <button onclick="saveBlog()" class="button primary-button" id="saveButton">Save</button>
+                <button onclick="deleteBlog()" class="button delete-button">Delete</button>
+            </div>
+            <div class="form-group">
+                <label for="blogTitle">Title</label>
+                <input type="text" id="blogTitle" placeholder="Enter blog title...">
+                <label for="blogContent">Content</label>
+                <textarea id="blogContent" placeholder="Write your blog..."></textarea>
+            </div>
+            <div class="view-mode">
+                <h2 id="viewTitle"></h2>
+                <div id="viewCount">Views: 0</div>
+                <div id="viewContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
